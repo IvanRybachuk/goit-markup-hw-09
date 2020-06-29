@@ -2,11 +2,30 @@
   background-color: $footer-bcg-color;
 
   &-content {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      padding: 60px 15px;
+    }
 
-    padding: 60px 15px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: center;
+      padding: 60px;
+
+      .footer-contacts {
+        margin-right: 165px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      padding: 60px 15px;
+    }
   }
 
   b {
@@ -14,7 +33,7 @@
 
     font-weight: 700;
     font-size: 14px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     line-height: 1.1;
     text-transform: uppercase;
 

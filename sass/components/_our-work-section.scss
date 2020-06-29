@@ -1,3 +1,9 @@
+.no-visible {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .our-work {
   @extend %list;
   display: flex;

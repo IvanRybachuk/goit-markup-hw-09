@@ -1,5 +1,5 @@
 .page {
-  background-color: $white;
+  // background-color: $white;
   color: $primary-text-color;
 
   font-family: $main-font;
@@ -7,20 +7,50 @@
 }
 
 .container {
-  width: 1200px;
+  //   min-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
-img {
-  display: block;
-}
+// img {
+//   display: block;
+// }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  // background-color: tomato;
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &-title {
     margin-top: 0;

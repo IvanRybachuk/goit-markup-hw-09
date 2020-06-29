@@ -1,6 +1,10 @@
-.social-media-footer .list {
-  @extend %list;
-  display: flex;
+.social-media-footer {
+  margin-bottom: 60px;
+  .list {
+    @extend %list;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .social-media-footer .item:not(:last-child),
