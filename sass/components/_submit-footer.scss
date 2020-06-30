@@ -1,5 +1,4 @@
 .footer-submit input {
-  //   margin-right: 12px;
   padding: 15px 16px;
   margin-bottom: 20px;
   width: 100%;
@@ -8,4 +7,21 @@
   border-radius: 4px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-submit {
+    margin-left: 106px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-submit {
+    margin-left: 0;
+  }
 }

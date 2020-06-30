@@ -1,9 +1,10 @@
 .social-media-footer {
   margin-bottom: 60px;
+  justify-content: center;
   .list {
     @extend %list;
     display: flex;
-    align-items: center;
+    justify-content: center;
   }
 }
 

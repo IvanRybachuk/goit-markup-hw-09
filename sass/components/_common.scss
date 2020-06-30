@@ -33,7 +33,6 @@ img {
 }
 
 .section {
-  // background-color: tomato;
   @media screen and (max-width: 480px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -59,10 +58,15 @@ img {
     margin-bottom: 50px;
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
 
     color: $primary-text-color;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.16;
+    }
   }
 }

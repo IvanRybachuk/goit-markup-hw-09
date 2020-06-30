@@ -11,10 +11,11 @@
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
-      justify-content: center;
+      text-align: center;
       padding: 60px;
 
       .footer-contacts {
+        display: block;
         margin-right: 165px;
       }
     }
@@ -23,13 +24,17 @@
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-
+      text-align: left;
       padding: 60px 15px;
+
+      .footer-contacts {
+        margin-right: 0;
+      }
     }
   }
 
   b {
-    display: inline-block;
+    display: block;
 
     font-weight: 700;
     font-size: 14px;
