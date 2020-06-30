@@ -4,6 +4,10 @@
 //   display: flex;
 // }
 
+.header {
+  position: relative;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -44,7 +48,7 @@
     position: absolute;
     display: none;
 
-    top: 60px;
+    top: 100%;
     left: 0;
     width: 100%;
     z-index: 999;
@@ -74,16 +78,20 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-right: 84px;
+    margin-left: auto;
 
     .item:not(:last-child) {
       margin-right: 50px;
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
+
   .link {
     display: inline-block;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
 
     font-weight: 500;
     // font-size: 18px;
@@ -102,14 +110,16 @@
     }
 
     @media screen and (min-width: 768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
       font-size: 14px;
       line-height: 1.14;
     }
   }
 
-  :not(:last-child) {
-    padding-bottom: 40px;
-  }
+  // :not(:last-child) {
+  //   padding-bottom: 40px;
+  // }
 
   .link:hover,
   .link:focus & {
@@ -128,7 +138,7 @@
     display: block;
     content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: 0;
     left: 0;
 
     width: 100%;
