@@ -6,10 +6,6 @@
   margin: -15px;
   justify-content: center;
 
-  //   .item:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-
   .item {
     @media screen and (max-width: 767px) {
       width: calc((100% - 2 * 30px) / 2);
@@ -24,17 +20,12 @@
       width: calc((100% - 6 * 30px) / 6);
       margin: 15px;
     }
-
-    // @media screen and (min-width: 1200px) {
-    //   width: calc((100% - 4 * 30px) / 4);
-    // }
   }
 }
 
 .our-clients .link {
   display: flex;
 
-  //   width: 170px;
   min-height: 90px;
   border: 1px solid $link-color;
   border-radius: 4px;

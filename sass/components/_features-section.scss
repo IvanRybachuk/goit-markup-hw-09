@@ -1,6 +1,5 @@
 .features {
   @extend %list;
-  //   display: flex;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -54,7 +53,7 @@
 
   .features-image {
     display: flex;
-    // width: 270px;
+
     min-height: 120px;
     justify-content: center;
     align-items: center;

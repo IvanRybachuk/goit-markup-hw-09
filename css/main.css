@@ -274,6 +274,7 @@ summary {
 }
 
 .page {
+  background-color: #ffffff;
   color: #212121;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
